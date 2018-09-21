@@ -72,7 +72,8 @@ def all_supplies_in_holidays(holiday_hash)
         else 
           day.each do |words|
           words.capitalize + ":"
-      end
+        end
+        items.each do ||
     end
   end
   "#{season}: #{holiday}:"
