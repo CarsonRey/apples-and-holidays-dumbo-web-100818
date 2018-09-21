@@ -68,18 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
     seasons
       holidays.each do |day, items|
       celebration << day.to_s.split("_")
-        if day.length > 1 
-          day.each do |words|
-          words.capitalize!.join(" ")
-          celebration << words
-          celebration
-          end
-        else 
-          day.each do |words|
-          words.capitalize!
-          celebration << words
-          celebration
-        end
+        
       items.each do |x|
         supply << x.join(", ")
         supply
