@@ -63,12 +63,11 @@ def all_supplies_in_holidays(holiday_hash)
   seasons = []
   celebration = []
   supply = []
-  holiday_hash.each do |season, holidays|
+  holiday_hash.each do |season, data|
     seasons << season.to_s.capitalize! + ":"
     seasons
-    holidays = holidays.to_s.capitalize! + ":"
-      holidays.each do |day, items|
-      celebration << day.to_s.split("_")
+      data.each do |holiday, items|
+      celebration << holiday.to_s.split("_")
       celebration.each do |words|
         if words.length 
         
