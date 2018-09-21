@@ -75,7 +75,8 @@ def all_supplies_in_holidays(holiday_hash)
     end
 end
 
-#
+#Since we're formatting a list where iterations will print out multiple lines, the iteration through the seasons should be 'puts' out first.
+#The second tier of iteration sets a 'split' collection of holidays to a variable for easy access/storage. We can then act on that variable of 'celebration' to collect all of 
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
