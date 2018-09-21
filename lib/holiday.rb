@@ -73,7 +73,7 @@ def all_supplies_in_holidays(holiday_hash)
           end
         else 
           day.collect do |words|
-          words.capitalize + ":"
+          words.capitalize! + ":"
         end
         items.each do ||
         end
