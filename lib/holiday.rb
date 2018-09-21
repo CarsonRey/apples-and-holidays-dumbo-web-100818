@@ -76,7 +76,10 @@ def all_supplies_in_holidays(holiday_hash)
 end
 
 #Since we're formatting a list where iterations will print out multiple lines, the iteration through the seasons should be 'puts' out first.
-#The second tier of iteration sets a 'split' collection of holidays to a variable for easy access/storage. We can then act on that variable of 'celebration' to collect all of the holidays and '.capitalize' them
+#The second tier of iteration sets a 'split' collection of holidays (into respective arrays) to a variable for easy access/storage. We can then act on that variable of 'celebration' to '.collect' (which automatically stores) all of the holidays and '.capitalize' them.
+# Now that each word is a seperate element in an array, we set 'celebration' equal to a version of itself where we use '.join(" ")' to put the capitalized words back together
+# Our items are already capitalized, so we only need to use 'join(", ")' again to turn them into a string with a comma and space. Storing them in a variable makes for easy access 
+# We then 'puts' the value of 'celebration' and 'items' in the correct format.  
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
