@@ -74,7 +74,7 @@ def all_supplies_in_holidays(holiday_hash)
         words.capitalize!
       end
       i += 1
-      celebration.
+      
       items.each do |x|
         supply << x.join(" ")
         supply
