@@ -67,7 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
     seasons << season.to_s.capitalize! + ":"
     seasons
       holidays.each do |day, items|
-      day.to_s.split("_")
+      celebration << day.to_s.split("_")
         if day.length > 1 
           day.each do |words|
           words.capitalize!.join(" ")
