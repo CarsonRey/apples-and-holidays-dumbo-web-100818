@@ -68,7 +68,10 @@ def all_supplies_in_holidays(holiday_hash)
     seasons
       holidays.each do |day, items|
       celebration << day.to_s.split("_")
+      celebration.each do |words|
+        if words.length 
         
+      end
       items.each do |x|
         supply << x.join(", ")
         supply
