@@ -78,7 +78,7 @@ def all_supplies_in_holidays(holiday_hash)
           celebration << words
         end
       items.each do |x|
-        x.join
+        x.join(", ")
         end
     end
   end
