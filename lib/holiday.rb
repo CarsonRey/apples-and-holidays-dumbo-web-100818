@@ -80,6 +80,7 @@ def all_supplies_in_holidays(holiday_hash)
       i += 1
       
       items.each do |x|
+        if 
         supply << x.join(" ")
         supply
         end
