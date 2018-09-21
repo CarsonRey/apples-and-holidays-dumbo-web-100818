@@ -85,7 +85,7 @@ def all_supplies_in_holidays(holiday_hash)
       end
     end
   end
-  "#{seasons}: #{celebration}: #{supply}"
+  puts "#{seasons}: #{celebration}: #{supply}"
 end
 
 
