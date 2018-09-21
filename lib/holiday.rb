@@ -63,13 +63,13 @@ def all_supplies_in_holidays(holiday_hash)
   seasons = []
   celeb = []
   holiday_hash.each do |season, holidays|
-    seasons << season.to_s.capitalize + ":"
+    seasons << season.to_s.capitalize! + ":"
       holidays.each do |day, items|
       day.to_s.split("_")
         if day.length > 1 
           day.each do |words|
-          words.capitalize.join(" ") + ":"
-          celeb << array
+          words.capitalize!.join(" ") + ":"
+          celeb << words
           end
         else 
           day.collect do |words|
