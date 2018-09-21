@@ -71,6 +71,9 @@ def all_supplies_in_holidays(holiday_hash)
       i = 0 
       while i < celebration.length
       celebration[i].each do |words|
+        if words.length == 1
+          words.capitalize!
+        else
         words.capitalize!.join(" ")
       end
       i += 1
