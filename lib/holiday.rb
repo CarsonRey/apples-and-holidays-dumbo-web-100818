@@ -66,7 +66,9 @@ def all_supplies_in_holidays(holiday_hash)
       holiday.each do |day, items|
       day.to_s.split("_").each do |words|
         words.capitalize.join(" ") + ":"
-      
+        binding pry
+      end
+    end
   end
   
 end
