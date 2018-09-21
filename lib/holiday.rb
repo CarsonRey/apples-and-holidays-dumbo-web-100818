@@ -68,7 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
       day = []
         celebration.collect do |day|
           day.capitalize!
-        
+        supply = []
       items.each do |x|
        supply << x.join(", ")
       end
