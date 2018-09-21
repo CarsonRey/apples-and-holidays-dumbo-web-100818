@@ -78,7 +78,6 @@ def all_supplies_in_holidays(holiday_hash)
         end
       end
       i += 1
-      
       items.each do |x|
        supply << x
       end
