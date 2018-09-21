@@ -64,6 +64,7 @@ def all_supplies_in_holidays(holiday_hash)
   celebration = []
   holiday_hash.each do |season, holidays|
     seasons << season.to_s.capitalize! + ":"
+    seasons
       holidays.each do |day, items|
       day.to_s.split("_")
         if day.length > 1 
@@ -76,11 +77,12 @@ def all_supplies_in_holidays(holiday_hash)
           words.capitalize! + ":"
           celebration << words
         end
-      items.each do ||
+      items.each do |x|
+        x.join
         end
     end
   end
-  "#{seasons}: #{celeb}: "
+  
 end
 end
 
