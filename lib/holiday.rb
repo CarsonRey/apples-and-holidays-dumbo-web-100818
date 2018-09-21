@@ -71,7 +71,7 @@ def all_supplies_in_holidays(holiday_hash)
         celebration = celebration.join(" ")
         supply = []
       
-       supply << x.join(", ")
+       supply = supply.join(", ")
     
       end
     end
