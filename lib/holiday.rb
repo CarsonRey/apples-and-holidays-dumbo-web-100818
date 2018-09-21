@@ -72,10 +72,10 @@ def all_supplies_in_holidays(holiday_hash)
         supply = []
       
        supply = supply.join(", ")
-    
+        puts "#{celebration}: #{supply}"
       end
     end
-  puts "#{celebration}: #{supply}"
+
 end
 
 
