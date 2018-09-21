@@ -65,16 +65,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{season.to_s.capitalize!}:"
       data.each do |holiday, items|
       celebration = holiday.to_s.split("_")
-      i = 0 
-      while i < celebration.length
-      celebration[i].each do |words|
-        if words == "christmas" || "thanksgiving"
-          words.capitalize!
-        else
-        words.capitalize!.join(" ")
-        end
-      end
-      i += 1
+      
       items.each do |x|
        supply << x.join(", ")
       end
