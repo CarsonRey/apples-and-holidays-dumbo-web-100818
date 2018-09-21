@@ -86,6 +86,7 @@ def all_supplies_in_holidays(holiday_hash)
         supply << x
         end
       end
+      end
     end
   end
   "#{seasons}: #{celebration}: #{supply}"
