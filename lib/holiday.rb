@@ -70,7 +70,7 @@ def all_supplies_in_holidays(holiday_hash)
         end
         celebration = celebration.join(" ")
         supply = []
-      items.each do |x|
+      
        supply << x.join(", ")
     
       end
