@@ -62,6 +62,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   seasons = []
   celebration = []
+  supply = []
   holiday_hash.each do |season, holidays|
     seasons << season.to_s.capitalize! + ":"
     seasons
@@ -71,15 +72,19 @@ def all_supplies_in_holidays(holiday_hash)
           day.each do |words|
           words.capitalize!.join(" ") + ":"
           celebration << words
+          celebration
           end
         else 
           day.each do |words|
           words.capitalize! + ":"
           celebration << words
+          celebration
         end
       items.each do |x|
-        x.join(", ")
+        supply << x.join(", ")
+        supply
         end
+      end
     end
   end
   
