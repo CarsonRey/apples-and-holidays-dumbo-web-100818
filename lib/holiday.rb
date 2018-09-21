@@ -70,13 +70,13 @@ def all_supplies_in_holidays(holiday_hash)
       day.to_s.split("_")
         if day.length > 1 
           day.each do |words|
-          words.capitalize!.join(" ") + ":"
+          words.capitalize!.join(" ")
           celebration << words
           celebration
           end
         else 
           day.each do |words|
-          words.capitalize! + ":"
+          words.capitalize!
           celebration << words
           celebration
         end
