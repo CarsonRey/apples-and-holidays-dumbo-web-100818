@@ -76,6 +76,7 @@ def all_supplies_in_holidays(holiday_hash)
           words.capitalize + ":"
         end
         items.each do ||
+        end
     end
   end
   "#{seasons}: #{celeb}: "
