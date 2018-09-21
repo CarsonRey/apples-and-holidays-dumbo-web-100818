@@ -60,23 +60,25 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  empty = []
+  seasons = []
+  celeb = []
   holiday_hash.each do |season, holidays|
-    empty << season.to_s.capitalize + ":"
+    seasons << season.to_s.capitalize + ":"
       holidays.each do |day, items|
       day.to_s.split("_")
         if day.length > 1 
           day.each do |words|
           words.capitalize.join(" ") + ":"
+          celeb << array
           end
         else 
-          day.each do |words|
+          day.collect do |words|
           words.capitalize + ":"
         end
         items.each do ||
     end
   end
-  "#{season}: #{holiday}:"
+  "#{seasons}: #{celeb}: "
 end
 end
 
